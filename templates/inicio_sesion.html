@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename="img/logo-removebg.png")}}">
+    <link rel="stylesheet" href="{{ url_for ('static',filename='css/forms.css')}}">
+</head>
+<body>
+    <div class="registro">
+        <h2>Inicio de sesion</h2>
+        <form action="/sesion" method='POST' class="sesion">
+
+            <div class="username">
+                <label for="nombre">Ingrese su nombre</label>
+                <input type="text" name="nombre" class="nombre">
+            </div>
+
+            <div class="username">
+                <label for="correo">Ingrese su correo</label>
+                <input type="email" name="correo" class="correo">
+            </div>
+
+            <div class="username">
+                <label for="contraseña">Ingrese su contraseña</label>
+                <input type="password" name="contraseña" class="contraseña">
+            </div>
+            
+            <button type="submit">enviar</button>
+            
+        </form>
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-danger" role="alert" id="alerta1">
+                {%for message in messages%}
+                    {{message}}
+                {%endfor%}
+            </div>
+        {%endif%}
+    {%endwith%}
+
+    <footer>
+        <p>MATE FACIL 2022 ©</p>
+    </footer>
+</body>
+</html>

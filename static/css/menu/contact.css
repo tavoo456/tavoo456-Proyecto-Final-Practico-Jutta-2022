@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 30px auto;
+}
+
+body{
+    background: linear-gradient(100deg, #58D68D, #6c3483);
+    height: 120vh;
+}
+
+.container{
+    width: 90%;
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.container img{
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+.container h2{
+    text-align: center;
+    color: black;
+}
+.container ul{
+    margin: 10px;
+    letter-spacing: 5px;
+    text-align: left;
+}
+.container ul li{
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.container .tarjeta{
+    /* background-color: aquamarine; */
+    display: block;
+    width: 320px;
+    text-align: center;
+
+    transition: all 0.5s;
+}
+.container .tarjeta:hover{
+    transform: translateY(-15px);
+}
+.container .tar1{grid-area: 1 / 2 / 2 / 3;}
+.container .tar2{grid-area: 1 / 3 / 2 / 4;}
+.container .tar3{grid-area: 1 / 4 / 2 / 5;}  
+
+.container .tar1:hover{background-color: rgb(202, 202, 73);}
+.container .tar2:hover{background-color: rgb(207, 73, 207);}
+.container .tar3:hover{background-color: rgb(61, 61, 61);}
+
+
+@media (max-width: 990px){
+    body{
+        height: 220vh;
+    }
+
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .container .tar1 { grid-area: 1 / 2 / 2 / 3; }
+    .container .tar2 { grid-area: 2 / 2 / 3 / 3; }
+    .container .tar3 { grid-area: 3 / 2 / 4 / 3; }
+}

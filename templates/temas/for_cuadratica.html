@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Cuadratica</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename="img/logo-removebg.png")}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for ('static',filename='css/menu.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static',filename='css/temas/for_cuadratica.css')}}">
+    <script src="{{ url_for ('static',filename='js/for_cuadratica.js')}}"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navigation">
+            <a href="" class="logo">
+                <img src="{{url_for('static',filename='img/logo.jfif')}}" alt="">
+                <h2>MATE FACIL</h2>
+            </a>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="{{url_for('index')}}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('more')}}">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>FORMULA CUADRATICA</h1>
+
+    <div class="cont">
+        <div id="form-calc">
+            <h2>Zona de Datos</h2>
+            <label for="a">Ingrese A:</label>
+            <input type="number" id="a"/>
+            <label for="b">Ingrese B:</label>
+            <input type="number" id="b"/>
+            <label for="c">Ingrese C:</label>
+            <input type="number" id="c"/>
+            <br />
+            <input type="button" id="calc" class="btn-primary" value="Calcular"/>
+        </div>
+            
+        <div id="resultado">
+            <h2>Zona de Resultados</h2>
+            <p id="info"></p>
+            <label>x1</label>
+            <input type="number" id="x1"/>
+            <label>x2</label>
+            <input type="number" id="x2"/>
+        </div>
+    </div>
+
+    <div class="foto">
+        <h2>LA FORMULA ES LA SIGUIENTE</h2>
+        <img src="{{url_for('static',filename="img/formula-cuadratica.webp")}}" alt="">
+    </div>
+
+    <div class="pre">
+        <h2>¿QUE ES LA FORMULA CUADRATICA?</h2>
+        <h3>¿QUE DEBO SABER ACERCA DE ESTO?</h3>
+        <h3>¿PARA QUE SE USA LA FORMA CUADRATICA?</h3>
+        <h4>¡Permitenos responder tus dudas!</h4>
+    </div>
+
+    <div class="mas">
+        <div class="section">
+            <p>
+            La fórmula cuadrática nos ayuda a resolver cualquier ecuación cuadrática. <br>
+            Pero, ¿Qué es una ecuación cuadrática? <br>
+            Una ecuación de segundo grado o ecuación cuadrática de una variable es aquella que tiene la expresión general:
+            <h3>ax²+bx+c=0</h3>
+            </p>
+        </div>
+        <div class="section">
+            <p>
+            donde x² es la variable y a ,b  y c son constantes; a es el coeficiente cuadrático (número que acompaña a la variable elevadaal cuadrado), b  el coeficiente lineal y c es el término independiente. <br>
+            Para resolver estas ecuaciones aplicamos nuestra formula cuadrática:
+            <h3>(-b±√(b²-4ac))/(2a)</h3>
+            </p>
+            <p>
+            Repítela cuantas veces sea necesario, pero ¡no la olvides!, ya que te acompañara en muchos ejercicios <br>
+            Para una mayor comprensión del tema y algunos ejercicios visualiza el siguiente video: <br>
+            <a href="https://youtube/TPdIimZmhu8">-- click aqui --</a>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>MATE FACIL 2022 ©</p>
+    </footer>
+</body>
+</html>

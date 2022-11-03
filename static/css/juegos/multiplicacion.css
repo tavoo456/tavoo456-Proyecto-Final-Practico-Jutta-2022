@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(100deg, #6c3483, #58D68D);
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    padding: 10px;
+}
+.header h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.mul{
+    width: 100%;
+}
+.mul p{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.proc{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.proc input{
+    width: 20%;
+    /* height: 15px; */
+    border-radius: 8px;
+    box-shadow: 0 1px 8px #000000;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.btn{
+    margin: 5px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 40px;
+    background: #000000;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 25px rgba(32, 4, 19, 0.4);
+    transition: box-shadow 0.25s;
+}
+.btn:active{
+    background: #fff;
+    color: #000000;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+#res{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}

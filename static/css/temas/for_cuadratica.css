@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(100deg, #6c3483, #58D68D);
+    height: 275vh;
+}
+
+.cont{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form-calc{
+    width: 30%;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+}
+input[type="button"]{
+    margin-top:20px;
+}
+
+.foto{
+    width: 90%;
+    margin: auto;
+}
+.foto h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.foto img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pre{
+    margin: 30px;
+}
+.mas{
+    margin-top: 40px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+}
+.mas .section{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mas .section p{
+    font-size: 25px;
+}
+.mas .section h3{
+    color: white;
+}
+
+
+@media (max-width: 680px){
+    .cont{
+        width: 100%;
+    }
+    #form-calc{
+        width: 100%;
+    }
+    .mas .section{
+        width: 100%;
+        padding: 10px;
+    }
+    .foto img{
+        width: 70%;
+    }
+}
+@media (max-width: 380px){
+    body{
+        height: 350vh;
+    }
+}

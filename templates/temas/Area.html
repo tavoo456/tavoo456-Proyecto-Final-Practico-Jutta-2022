@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Area</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename="img/logo-removebg.png")}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for ('static',filename='css/menu.css')}}">
+    <link rel="stylesheet" href="{{url_for ('static',filename='css/temas/Area.css')}}">
+    <script src="{{ url_for ('static',filename='js/Area.js')}}"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navigation">
+            <a href="" class="logo">
+                <img src="{{url_for('static',filename='img/logo.jfif')}}" alt="">
+                <h2>MATE FACIL</h2>
+            </a>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="{{url_for('index')}}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url_for('more')}}">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="cont">
+        <div class="formula">
+            <h1>CALCULAR AREA CUADRADO</h1>
+            <input type="text" name="lado" id="lado" placeholder="Ingrese valor del lado">
+            <button type="button" class="btn-primary" onclick="AreaCuadrado()">Calcular area</button>
+            <p><span id="cuadrado"></span></p>
+        </div>
+
+        <div class="info">
+            <h2>¿COMO CALCULAR EL AREA DE UN CUADRADO?</h2>
+            <p>La formula que se utiliza es Lado * Lado</p>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="formula">
+            <h1>CALCULAR AREA TRIANGULO</h1>
+            <input type="text" name="base" id="base" placeholder="Ingrese valor de Base">
+            <input type="text" name="altura" id="altura" placeholder="Ingrese valor de Altura">
+            <button type="button" class="btn-primary" onclick="AreaTriangulo()">Calcular area</button>
+            <p><span id="triangulo"></span></p>
+            
+        </div>
+
+        <div class="info">
+            <h2>¿COMO CALCULAR EL AREA DE UN CUADRADO?</h2>
+            <p>La formula que se utiliza es Base * Altura / 2</p>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="formula">
+            <h1>CALCULAR AREA RECTANGULO</h1>
+            <input type="text" name="base" id="baserec" placeholder="Ingrese valor de Base">
+            <input type="text" name="altura" id="alturarec" placeholder="Ingrese valor de Altura">
+            <button type="button" class="btn-primary" onclick="AreaRectangulo()">Calcular area</button>
+            <p><span id="rectangulo"></span></p>
+        </div>
+
+        <div class="info">
+            <h2>¿COMO CALCULAR EL AREA DE UN CUADRADO?</h2>
+            <p>La formula que se utiliza es Base * Altura</p>
+        </div>
+    </div>
+
+    <div class="mas">
+        <p>Ten a la mano algunas de las formulas para encontrar el area de algunas de las figuras geometricas</p>
+        <img src="{{url_for('static', filename='/img/areas.jpg')}}" alt="">
+    </div>
+
+    <footer>
+        <p>MATE FACIL 2022 ©</p>
+    </footer>
+    
+</body>
+</html>

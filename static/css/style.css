@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(100deg, #58D68D, #6c3483);
+    height: 100vh;
+}
+
+.name{
+    text-align: center;
+    color: #000;
+    z-index: -1;
+
+    position: relative;
+    animation: mymove3 2s;
+    animation-delay: 0.2s;
+}
+
+.contenedor, .juego{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* CONTENIDOS */
+button{
+    margin: 20px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 30px;
+    background-color: #000;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contenedor a button{
+    color: #fff;
+}
+button:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 8px 0 rgba(0, 0, 0, 0.616);
+}
+
+/* JUEGOS */
+.juego h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.juego button a{
+    color: rgb(0, 0, 0);
+}
+
+.cerrar{
+    text-align: center;
+}
+.cerrar a{
+    color: #fff;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+
+@keyframes mymove3 {
+    from {top: -80px;}
+    to {top: 0;}
+  }
+  
+@media (max-width: 680px){
+    button{
+        letter-spacing: 5px;
+    }
+}
+@media (max-width: 472px){
+    body{
+        height: 120vh;
+    }
+}

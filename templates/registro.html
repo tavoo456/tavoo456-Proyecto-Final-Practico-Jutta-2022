@@ -29,17 +29,19 @@
             
             <button type="submit">enviar</button>
         </form>
-    </div>
-    
-    {% with messages = get_flashed_messages() %}
+
+        <a href="{{url_for('inicio')}}">Si ya tienes una cuenta inicia sesion</a>
+
+        {% with messages = get_flashed_messages() %}
         {% if messages %}
-            <div class="alert alert-danger" role="alert" id="alerta1">
+            <div role="alert" id="alerta1">
                 {%for message in messages%}
                     {{message}}
                 {%endfor%}
             </div>
         {%endif%}
-    {%endwith%}
+        {%endwith%}
+    </div>
 
     <footer>
         <p>MATE FACIL 2022 ©</p>

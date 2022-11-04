@@ -35,7 +35,7 @@ def registrar():
     contraseña_ = request.form['contraseña']
     
     if nombre_ == "" or correo_ == "" or contraseña_ == "":
-        flash("Pone el mensaje que queras")
+        flash("Completa todos los campos")
         return redirect(url_for('registro'))
     
     sql = "INSERT INTO registros (nombre, correo, contraseña) VALUES (%s, %s, %s);"

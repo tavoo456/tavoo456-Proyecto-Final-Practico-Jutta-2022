@@ -42,3 +42,12 @@ div .btn:hover{
     color: rgb(45, 196, 45);
     border: 1px solid rgb(45, 196, 45);
 }
+.registro a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
